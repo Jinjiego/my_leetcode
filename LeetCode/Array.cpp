@@ -1,4 +1,10 @@
 #include"Array.h"
+Array::Array(){
+}
+Array::~Array(){
+}
+
+
 //=================2017-01-22===========================================
 int Array::search_rotated(const vector<float>&ArrayData, float target){
 	int first = 0, last =ArrayData.max_size(),mid;
@@ -55,16 +61,13 @@ vector<int> Array::two_sum(const vector<int> &nums, int target){
 			result.push_back(mapping[gap]+1);
 		
 		 }
-
-	
-	
 	}
 
-
+	return result;
 
 
 }
-vector<vector<int>> three_sum(const vector<int> &nums,int target){
+vector<vector<int>> three_sum(vector<int> &nums,int target){
 	vector<vector<int>> result;
 
 	sort(nums.begin(), nums.end());
@@ -98,7 +101,7 @@ vector<vector<int>> three_sum(const vector<int> &nums,int target){
 
 }
 //=================2017-01-23==============================================
-vector<vector<int>> Array::four_sum(const vector<int> &nums, int target){
+vector<vector<int>> Array::four_sum( vector<int> &nums, int target){
 	vector<vector<int>> result;
 	if (nums.size() < 4) return result;
 	sort(nums.begin(), nums.end());
@@ -125,7 +128,7 @@ vector<vector<int>> Array::four_sum(const vector<int> &nums, int target){
 		}
 	}
 }
-vector<vector<int>> Array::four_sum_map(const vector<int> &nums, int target){
+vector<vector<int>> Array::four_sum_map( vector<int> &nums, int target){
 	vector<vector<int>> result;
 
 	unordered_map<int,vector<pair<int, int>> > cache;
@@ -236,6 +239,27 @@ int singleNumberII(vector<int> &nums){
 	}
 	return result; 
 
-
 }
- 
+int removeDuplicates(vector<int> &nums){
+	int cur = 0;
+	for (int i = 1; i < nums.size(); i++){
+		if (nums[i] != nums[cur]){
+			nums[++cur] = nums[i];
+		}
+	}
+	return cur + 1;
+}
+int removeDuplicates_STL(vector<int> &nums){
+	return distance(nums.begin(),unique(nums.begin(),nums.end() ));
+}
+int Array::removeDuplicates_nth(vector<int> &nums){
+	//time complexitity--O(n) space--O(1)
+	int cur = 2,nth=2;
+	for (int i = 2; i < nums.size(); ++i)
+	{
+		if (nums[i] != nums[cur-nth]){
+			nums[cur++] = nums[i];
+		}
+	}
+	return cur + 1;
+}

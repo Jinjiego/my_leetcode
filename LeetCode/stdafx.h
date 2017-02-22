@@ -15,6 +15,9 @@
 #include<map>
 #include<unordered_map>
 #include<algorithm>
+#include<string>
+#include<stack>
+#include<queue>
 using namespace std;
 
 // TODO:  在此处引用程序需要的其他头文件

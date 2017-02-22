@@ -1,48 +1,25 @@
-﻿生成启动时间为 2017/1/25 19:01:54。
-     1>项目“F:\MyProg\LeetCode\LeetCode\LeetCode.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2017/2/13 12:14:07。
+     1>项目“G:\projects\LeetCode\LeetCode\LeetCode.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Visual Studio 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Array.cpp
          Array.cpp
-     1>f:\myprog\leetcode\leetcode\array.cpp(50): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\myprog\leetcode\leetcode\array.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\myprog\leetcode\leetcode\array.cpp(142): warning C4018: “<=”: 有符号/无符号不匹配
-     1>d:\visual studio 2013\vc\include\algorithm(3009): error C3892: “_First”: 不能给常量赋值
-                 d:\visual studio 2013\vc\include\algorithm(3026): 参见对正在编译的函数 模板 实例化“void std::_Insertion_sort1<_BidIt,_Pr,int>(_BidIt,_BidIt,_Pr,_Ty *)”的引用
-                 with
-                 [
-                     _BidIt=const int *
-         ,            _Pr=std::less<void>
-         ,            _Ty=int
-                 ]
-                 d:\visual studio 2013\vc\include\algorithm(3148): 参见对正在编译的函数 模板 实例化“void std::_Insertion_sort<_RanIt,_Pr>(_BidIt,_BidIt,_Pr)”的引用
-                 with
-                 [
-                     _RanIt=const int *
-         ,            _Pr=std::less<void>
-         ,            _BidIt=const int *
-                 ]
-                 d:\visual studio 2013\vc\include\algorithm(3157): 参见对正在编译的函数 模板 实例化“void std::_Sort<const int*,__w64 int,_Pr>(_RanIt,_RanIt,_Diff,_Pr)”的引用
-                 with
-                 [
-                     _Pr=std::less<void>
-         ,            _RanIt=const int *
-         ,            _Diff=__w64 int
-                 ]
-                 d:\visual studio 2013\vc\include\algorithm(3164): 参见对正在编译的函数 模板 实例化“void std::sort<_RanIt,std::less<void>>(_RanIt,_RanIt,_Pr)”的引用
-                 with
-                 [
-                     _RanIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>
-         ,            _Pr=std::less<void>
-                 ]
-                 f:\myprog\leetcode\leetcode\array.cpp(70): 参见对正在编译的函数 模板 实例化“void std::sort<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>>(_RanIt,_RanIt)”的引用
-                 with
-                 [
-                     _RanIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>
-                 ]
-     1>d:\visual studio 2013\vc\include\algorithm(3016): error C3892: “_Next1”: 不能给常量赋值
-     1>d:\visual studio 2013\vc\include\algorithm(3017): error C3892: “_Next1”: 不能给常量赋值
-     1>已完成生成项目“F:\MyProg\LeetCode\LeetCode\LeetCode.vcxproj”(Build 个目标)的操作 - 失败。
+     1>g:\projects\leetcode\leetcode\array.cpp(56): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\projects\leetcode\leetcode\array.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\projects\leetcode\leetcode\array.cpp(145): warning C4018: “<=”: 有符号/无符号不匹配
+     1>g:\projects\leetcode\leetcode\array.cpp(245): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\projects\leetcode\leetcode\array.cpp(258): warning C4018: “<”: 有符号/无符号不匹配
+     1>g:\projects\leetcode\leetcode\array.cpp(130): warning C4715: “Array::four_sum”: 不是所有的控件路径都返回值
+       Link:
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\projects\LeetCode\Debug\LeetCode.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\projects\LeetCode\Debug\LeetCode.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\projects\LeetCode\Debug\LeetCode.lib" /MACHINE:X86 Debug\LinkList.obj
+         Debug\main.obj
+         Debug\Array.obj
+         Debug\Stack_Queue.obj
+         Debug\stdafx.obj
+         Debug\String.obj
+         Debug\Tree.obj
+         LeetCode.vcxproj -> G:\projects\LeetCode\Debug\LeetCode.exe
+     1>已完成生成项目“G:\projects\LeetCode\LeetCode\LeetCode.vcxproj”(Build 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:01.64
+已用时间 00:00:02.79

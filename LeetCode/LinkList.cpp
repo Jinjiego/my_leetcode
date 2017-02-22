@@ -20,7 +20,7 @@ ListNode* LinkList:: addTwoNumber(ListNode *l1, ListNode*l2){
 	}
 	return  head;
 }
-ListNode* reverseBetween_m_n(ListNode * l,int m,int n){
+ListNode* LinkList::reverseBetween_m_n(ListNode * l, int m, int n){
 	//O(n) time comllexity and O(1) space
 	//l has head node with val=-1
 	ListNode* follow=l,*m_pptr=nullptr,*n_nptr=nullptr,*p;
@@ -152,7 +152,8 @@ ListNode* RotateList_k(ListNode * l, int k){
 
 //2017-01-26
 ListNode* RemoveNthFromEnd(ListNode * l, int n){
-	ListNode * p=nullptr, *q = nullptr, int c = 0;
+	ListNode * p = nullptr, *q = nullptr;
+	int c = 0;
 	if (!p) return l;
 	for ( p=l->next,q=l;p->next;p = p->next,++c)
 	{
@@ -167,9 +168,20 @@ ListNode* SwapPair(ListNode *l){
 	ListNode* p = l->next,*q=l;
 	for (int i = 1; p; ++i, q = q->next,p = p->next){
 		if (i % 2 == 0){
-			swap(q->val, p->val);
+			swap(q->val, p->val); 
 		}
 	}
 	return l;
+
+}
+
+//2017-01-27
+ListNode * reverseKGroup( ){
+
+	return nullptr;
+
+}
+void debug(){
+
 
 }

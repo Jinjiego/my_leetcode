@@ -12,6 +12,8 @@ class LinkList{
 
 	
 	}
+	void debug();
+	ListNode* reverseBetween_m_n(ListNode * l, int m, int n);
 
 
 
